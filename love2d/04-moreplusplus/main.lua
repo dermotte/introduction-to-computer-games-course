@@ -11,7 +11,7 @@ function love.load()
   snowSpeed = 30  -- pixels per second
   snow = {}
   for i = 1, 64, 1 do
-    newSnowflake = { x = love.math.random(800), y = - love.math.random( 1000 )}
+    newSnowflake = { x = love.math.random(800), y = - love.math.random( 1000 ), scale = love.math.random()/2.0 + 0.5}
 	   table.insert(snow, newSnowflake)
   end
 end
@@ -27,7 +27,7 @@ function love.update(dt)
 
   -- deal with the snow
   for i, snowf in ipairs(snow) do
-	  snowf.y = snowf.y + snowSpeed * dt
+	  snowf.y = snowf.y + snowSpeed * dt * snowf.scale
   	if snowf.y > love.graphics.getHeight() then -- remove snowflake
 		    table.remove(snow, i)
 	  end
@@ -37,6 +37,6 @@ end
 function love.draw()
   love.graphics.draw(gamebert.img, gamebert.x, gamebert.y)
   for i, snowf in ipairs(snow) do -- draw snow
-	  love.graphics.draw(snowflake, snowf.x, snowf.y)
+	  love.graphics.draw(snowflake, snowf.x, snowf.y, 0, snowf.scale)
   end
 end
