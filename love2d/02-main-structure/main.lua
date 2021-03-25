@@ -5,7 +5,7 @@ function love.load()
    image = love.graphics.newImage("gamebert.png")
    imgx = 0
    imgy = love.graphics.getHeight() - 320
-   stepSize = 300 -- in pixel per second
+   stepSize = 50 -- in pixel per second
 end
 
 -- is called for every frame, updates the world

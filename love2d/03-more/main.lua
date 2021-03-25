@@ -1,3 +1,4 @@
+-- snowflake from FontAwesome under (CC) license
 function love.load()
   -- init gamebert
   gamebert = {}
