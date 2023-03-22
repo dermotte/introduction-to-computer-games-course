@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://ccoor5tbcc3b8"]
+
+[ext_resource type="Texture2D" uid="uid://c61u8jjjul5w0" path="res://hillsLarge.png" id="1_cyxg3"]
+[ext_resource type="Script" path="res://CanvasLayer3.gd" id="1_epu22"]
+[ext_resource type="Texture2D" uid="uid://b2ribidbx3lov" path="res://mountains.png" id="1_vqgo8"]
+[ext_resource type="Texture2D" uid="uid://dfpgsb3d3cl8n" path="res://groundLayer2.png" id="2_uc88r"]
+[ext_resource type="Script" path="res://CanvasLayer2.gd" id="3_8bgxd"]
+[ext_resource type="Texture2D" uid="uid://d23r2ikp5jsnh" path="res://castleSmallAlt.png" id="5_e7ft6"]
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="5_njmjf"]
+[ext_resource type="Texture2D" uid="uid://c3a4xoerxkpwp" path="res://treeSmall_green2.png" id="8_fmdh8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+script = ExtResource("1_epu22")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer3"]
+z_index = 2
+offset_top = 16.0
+offset_right = 1763.0
+offset_bottom = 416.0
+texture = ExtResource("1_vqgo8")
+stretch_mode = 1
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+script = ExtResource("3_8bgxd")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer2"]
+z_index = 1
+offset_top = 168.0
+offset_right = 1763.0
+offset_bottom = 568.0
+texture = ExtResource("1_cyxg3")
+stretch_mode = 1
+
+[node name="Castle" type="TextureRect" parent="CanvasLayer2"]
+offset_left = 320.0
+offset_top = 220.0
+offset_right = 428.0
+offset_bottom = 305.0
+texture = ExtResource("5_e7ft6")
+
+[node name="Castle2" type="TextureRect" parent="CanvasLayer2"]
+offset_left = 1344.0
+offset_top = 220.0
+offset_right = 1452.0
+offset_bottom = 305.0
+texture = ExtResource("5_e7ft6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("5_njmjf")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+z_index = 2
+offset_top = 362.0
+offset_right = 1763.0
+offset_bottom = 562.0
+texture = ExtResource("2_uc88r")
+stretch_mode = 1
+
+[node name="Tree" type="TextureRect" parent="CanvasLayer"]
+offset_left = 660.0
+offset_top = 330.0
+offset_right = 700.0
+offset_bottom = 398.0
+texture = ExtResource("8_fmdh8")
+
+[node name="Tree2" type="TextureRect" parent="CanvasLayer"]
+offset_left = 1684.0
+offset_top = 330.0
+offset_right = 1724.0
+offset_bottom = 398.0
+texture = ExtResource("8_fmdh8")
