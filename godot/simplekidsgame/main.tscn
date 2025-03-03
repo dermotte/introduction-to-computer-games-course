@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=3 uid="uid://bo32prr5kc68e"]
+
+[ext_resource type="Texture2D" uid="uid://w8eqir5r8t86" path="res://images/bg.png" id="1_5vw27"]
+[ext_resource type="Texture2D" uid="uid://cthro0wx3c6w7" path="res://images/circle_play.png" id="2_kek77"]
+[ext_resource type="Script" uid="uid://baxjuyqu46u4x" path="res://button.gd" id="3_4c57u"]
+[ext_resource type="Texture2D" uid="uid://cu7sw8vg3c0px" path="res://images/cow.png" id="4_efxa6"]
+[ext_resource type="Texture2D" uid="uid://3ejr1htj4v3a" path="res://images/frog.png" id="5_dg77c"]
+[ext_resource type="Texture2D" uid="uid://d08ic10odo21i" path="res://images/owl.png" id="6_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://dvhjmhwdknr51" path="res://images/pig.png" id="7_w48qg"]
+[ext_resource type="AudioStream" uid="uid://d0mymbrfa7ro1" path="res://sfx/cow_mixdown.mp3" id="8_vivmo"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(648, 375)
+scale = Vector2(1.22778, 0.757407)
+texture = ExtResource("1_5vw27")
+
+[node name="Button" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_kek77")
+script = ExtResource("3_4c57u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_efxa6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(320, 480)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_dg77c")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(960, 480)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_ycdy4")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(960, 240)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_w48qg")
+
+[node name="cow_mixdown" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_vivmo")

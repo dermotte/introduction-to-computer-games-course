@@ -41,6 +41,7 @@ offset_bottom = 305.0
 texture = ExtResource("5_e7ft6")
 
 [node name="Castle2" type="TextureRect" parent="CanvasLayer2"]
+visible = false
 offset_left = 1344.0
 offset_top = 220.0
 offset_right = 1452.0
