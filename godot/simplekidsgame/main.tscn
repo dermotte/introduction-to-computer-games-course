@@ -1,45 +1,63 @@
-[gd_scene load_steps=9 format=3 uid="uid://bo32prr5kc68e"]
+[gd_scene format=3 uid="uid://bo32prr5kc68e"]
 
 [ext_resource type="Texture2D" uid="uid://w8eqir5r8t86" path="res://images/bg.png" id="1_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cthro0wx3c6w7" path="res://images/circle_play.png" id="2_kek77"]
 [ext_resource type="Script" uid="uid://baxjuyqu46u4x" path="res://button.gd" id="3_4c57u"]
 [ext_resource type="Texture2D" uid="uid://cu7sw8vg3c0px" path="res://images/cow.png" id="4_efxa6"]
 [ext_resource type="Texture2D" uid="uid://3ejr1htj4v3a" path="res://images/frog.png" id="5_dg77c"]
+[ext_resource type="Script" uid="uid://bausad3puqick" path="res://sprite_right.gd" id="5_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://d08ic10odo21i" path="res://images/owl.png" id="6_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://dvhjmhwdknr51" path="res://images/pig.png" id="7_w48qg"]
-[ext_resource type="AudioStream" uid="uid://d0mymbrfa7ro1" path="res://sfx/cow_mixdown.mp3" id="8_vivmo"]
+[ext_resource type="Script" uid="uid://c78ko0biv5psa" path="res://sprite_wrong.gd" id="9_kek77"]
+[ext_resource type="AudioStream" uid="uid://djltsynhs72wu" path="res://sfx/qwen_tts_try_again.wav" id="10_4c57u"]
+[ext_resource type="AudioStream" uid="uid://cq0g7t7o80oaw" path="res://sfx/qwen_tts_right.wav" id="10_efxa6"]
+[ext_resource type="AudioStream" uid="uid://bnwac8ew3yxv3" path="res://sfx/qwen_tts_cow_says.wav" id="11_dg77c"]
+[ext_resource type="AudioStream" uid="uid://8x0ktybbxhjj" path="res://sfx/qwen_tts_mooo.wav" id="12_w48qg"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1510532386]
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="." unique_id=652237797]
 position = Vector2(648, 375)
 scale = Vector2(1.22778, 0.757407)
 texture = ExtResource("1_5vw27")
 
-[node name="Button" type="Sprite2D" parent="."]
+[node name="Button" type="Sprite2D" parent="." unique_id=836416789]
 position = Vector2(640, 360)
 texture = ExtResource("2_kek77")
 script = ExtResource("3_4c57u")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="SpriteCow" type="Sprite2D" parent="." unique_id=530252203]
 position = Vector2(320, 240)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("4_efxa6")
+script = ExtResource("5_ycdy4")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="SpriteFrog" type="Sprite2D" parent="." unique_id=2093058786]
 position = Vector2(320, 480)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("5_dg77c")
+script = ExtResource("9_kek77")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="SpriteOwl" type="Sprite2D" parent="." unique_id=1556569240]
 position = Vector2(960, 480)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("6_ycdy4")
+script = ExtResource("9_kek77")
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="SpritePig" type="Sprite2D" parent="." unique_id=2099434433]
 position = Vector2(960, 240)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_w48qg")
+script = ExtResource("9_kek77")
 
-[node name="cow_mixdown" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_vivmo")
+[node name="QwenTtsTryAgain" type="AudioStreamPlayer" parent="." unique_id=975615357]
+stream = ExtResource("10_4c57u")
+
+[node name="QwenTtsRight" type="AudioStreamPlayer" parent="." unique_id=1435038773]
+stream = ExtResource("10_efxa6")
+
+[node name="QwenTtsCowSays" type="AudioStreamPlayer" parent="." unique_id=651284222]
+stream = ExtResource("11_dg77c")
+
+[node name="QwenTtsMooo" type="AudioStreamPlayer" parent="." unique_id=1139195156]
+stream = ExtResource("12_w48qg")
