@@ -12,3 +12,7 @@ func _input(event):
 			if click_pos.y >= button_position.y and click_pos.y <= button_position.y + texture_size.y:
 				$"../QwenTtsCowSays".play()
 		
+
+
+func _on_timer_timeout() -> void:
+	pass # Replace with function body.

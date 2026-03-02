@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://cq0g7t7o80oaw" path="res://sfx/qwen_tts_right.wav" id="10_efxa6"]
 [ext_resource type="AudioStream" uid="uid://bnwac8ew3yxv3" path="res://sfx/qwen_tts_cow_says.wav" id="11_dg77c"]
 [ext_resource type="AudioStream" uid="uid://8x0ktybbxhjj" path="res://sfx/qwen_tts_mooo.wav" id="12_w48qg"]
+[ext_resource type="Script" uid="uid://chpuq0asvjiua" path="res://timer.gd" id="14_w48qg"]
 
 [node name="Node2D" type="Node2D" unique_id=1510532386]
 
@@ -61,3 +62,8 @@ stream = ExtResource("11_dg77c")
 
 [node name="QwenTtsMooo" type="AudioStreamPlayer" parent="." unique_id=1139195156]
 stream = ExtResource("12_w48qg")
+
+[node name="Timer" type="Timer" parent="." unique_id=135967046]
+script = ExtResource("14_w48qg")
+
+[connection signal="timeout" from="Timer" to="SpriteCow" method="_on_timer_timeout"]

@@ -11,4 +11,7 @@ func _input(event):
 		if click_pos.x >= button_position.x and click_pos.x <= button_position.x + texture_size.x:
 			if click_pos.y >= button_position.y and click_pos.y <= button_position.y + texture_size.y:
 				$"../QwenTtsMooo".play()
-				# $"../QwenTtsRight".play()
+				$"../Timer".start(1.0)
+
+func _on_timer_timeout():
+	$"../QwenTtsRight".play()
