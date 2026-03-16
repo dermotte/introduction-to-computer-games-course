@@ -20,6 +20,16 @@ function love.load()
   objects.ground.fixture = love.physics.newFixture(objects.ground.body,
                                                    objects.ground.shape)
 
+  -- wall
+  objects.wall_right = {}
+  objects.wall_right.body = love.physics.newBody(world, 0, 0)
+  objects.wall_right.shape = love.physics.newEdgeShape( 650, 0, 650, 650  )
+  objects.wall_right.fixture = love.physics.newFixture(objects.wall_right.body, objects.wall_right.shape)
+  objects.wall_left = {}
+  objects.wall_left.body = love.physics.newBody(world, 0, 0)
+  objects.wall_left.shape = love.physics.newEdgeShape( 0, 0, 0, 650 )
+  objects.wall_left.fixture = love.physics.newFixture(objects.wall_left.body, objects.wall_left.shape)
+
   -- let's create a ball
   objects.ball = {}
   -- place the body in the center of the world and make it dynamic, so
