@@ -1,0 +1,48 @@
+:: StoryTitle
+Super Mario
+
+
+:: StoryData
+{
+  "ifid": "D5C42E5B-DF56-42C6-9CEF-E60B70B71F78",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Follow the airship {"position":"875,750","size":"100,100"}
+Mario and Luigi arrive at the edge of the Mushroom Kingdom, where the lush green hills give way to rugged, unknown territory. Looking toward the dark horizon, a heavy sense of dread settles over them; the path ahead looks treacherous and Bowser’s forces are clearly formidable. The brothers pause to discuss their next move before venturing into the danger.
+
+[[Luigi goes back for help]]
+[[Go together]]
+
+
+:: Go together {"position":"1025,900","size":"100,100"}
+
+
+
+:: Luigi goes back for help {"position":"750,925","size":"100,100"}
+
+
+
+:: Relax and wait {"position":"775,600","size":"100,100"}
+Mario and Luigi decide to stay seated, watching the massive shadow drift overhead with curiosity. For a moment, it seems like nothing more than a strange cloud passing by. Then, a piercing scream echoes from above. You see Princess Peach trapped in a cage as Bowser’s airship pulls away. By the time you realize this is an actual raid, the ship is already far out of sight. There is no time left to sit around!
+
+[[Follow the airship]]
+
+
+:: Rush towards the airship {"position":"1000,600","size":"100,100"}
+Rush towards the airship
+
+Mario and Luigi spring into action, sprinting across the rolling hills as fast as their legs can carry them. They dash through meadows and leap over obstacles, determined to catch up to the massive vessel before it reaches the horizon. However, the airship is far too swift; by the time they reach the edge of the clearing, the Koopa King’s ship has already vanished into the distant clouds.
+
+[[Follow the airship]]
+
+
+:: Start {"position":"875,425","size":"100,100"}
+The sun is shining brightly over the Mushroom Kingdom. Mario and Luigi are sitting by a sparkling stream, enjoying a quiet afternoon of snacking on Super Mushrooms. Suddenly, the sky darkens as a massive shadow looms overhead. Bowser's airship emerges from the clouds, and you see Princess Peach being carried away!
+
+[[Relax and wait]]
+[[Rush towards the airship]]

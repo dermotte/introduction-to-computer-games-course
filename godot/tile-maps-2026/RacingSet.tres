@@ -2,6 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://bpkji7x6s02i7" path="res://assets/spritesheet_tiles.png" id="1_hnj38"]
 
+[sub_resource type="TileMapPattern" id="TileMapPattern_hnj38"]
+tile_data = PackedInt32Array(0, 327681, 10, 65536, 196609, 10, 1, 327681, 10, 65537, 196609, 10, 2, 327681, 10, 65538, 196609, 10)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_qgxxt"]
+tile_data = PackedInt32Array(0, 327681, 10, 65536, 262145, 4, 1, 327681, 7, 65537, 262145, 9)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_o8mjs"]
+tile_data = PackedInt32Array(0, 196609, 4, 65536, 196609, 10, 1, 262145, 9, 65537, 262145, 7)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_l611c"]
+tile_data = PackedInt32Array(0, 262145, 11, 65536, 262145, 8, 1, 196609, 5, 65537, 196609, 10)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_mx2m5"]
+tile_data = PackedInt32Array(0, 327681, 8, 65536, 262145, 11, 1, 327681, 10, 65537, 262145, 5)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_5xesb"]
+tile_data = PackedInt32Array(0, 262145, 11, 65536, 262145, 11, 131072, 262145, 11, 1, 262145, 9, 65537, 262145, 9, 131073, 262145, 9)
+
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qgxxt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o8mjs"]
@@ -156,6 +174,7 @@ texture_region_size = Vector2i(128, 128)
 3:8/0 = 0
 4:8/0 = 0
 5:8/0 = 0
+5:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, 64, -32, 0, 0, -32, 32, -32, 64, -32, 64, -64, -64, -64, -64, 64)
 6:8/0 = 0
 7:8/0 = 0
 8:8/0 = 0
@@ -190,6 +209,7 @@ texture_region_size = Vector2i(128, 128)
 3:10/0 = 0
 4:10/0 = 0
 5:10/0 = 0
+5:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, -32, -64, -32)
 6:10/0 = 0
 7:10/0 = 0
 8:10/0 = 0
@@ -206,6 +226,7 @@ texture_region_size = Vector2i(128, 128)
 2:11/0 = 0
 3:11/0 = 0
 4:11/0 = 0
+4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -64, -32, 64, -64, 64, -64, -64)
 5:11/0 = 0
 6:11/0 = 0
 7:11/0 = 0
@@ -326,3 +347,9 @@ tile_size = Vector2i(128, 128)
 physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_qgxxt")
 sources/1 = SubResource("TileSetAtlasSource_o8mjs")
+pattern_0 = SubResource("TileMapPattern_hnj38")
+pattern_1 = SubResource("TileMapPattern_qgxxt")
+pattern_2 = SubResource("TileMapPattern_o8mjs")
+pattern_3 = SubResource("TileMapPattern_l611c")
+pattern_4 = SubResource("TileMapPattern_mx2m5")
+pattern_5 = SubResource("TileMapPattern_5xesb")

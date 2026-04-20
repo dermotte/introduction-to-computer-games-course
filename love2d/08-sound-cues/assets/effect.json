@@ -1,0 +1,12 @@
+{
+    "name": "powerup",
+    "falloff": 25,
+    "priority": "low",
+    "sources":
+    [
+        "assets/effect01.wav",
+        "assets/effect02.wav",
+        "assets/effect03.wav",
+        "assets/effect04.wav"
+    ]
+}
